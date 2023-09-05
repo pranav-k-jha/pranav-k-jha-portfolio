@@ -159,6 +159,20 @@ h3{
     padding-right: 50px;
     padding-left: 50px;
 }
+
+@media (max-width: 680px) {
+    .container-aboutme{
+        display: block;
+        text-align: justify;
+        margin-top: 120px;
+        height: 800px;
+    }
+   
+    
+
+}
+
+
 .container-resume{
     display: flex;
     flex-direction: column;
@@ -175,6 +189,7 @@ h3{
     padding: 10px;
     margin: 30px;
 }
+
 .work-exp{
     display: flex;
     flex-direction: column;
@@ -235,6 +250,55 @@ h3{
     
 }
 
+@media (max-width: 680px) {
+    .container-resume{
+        display: flex;
+        height: 600px;
+        width: 100%;
+        margin-top: 160px;
+
+    }
+    .container-resume > p{
+        text-align:justify;
+        width: 400px;
+    }
+    .work-exp{
+        height: 2100px;
+    }
+    .work-exp-item{
+        width: 400px;
+        text-align: justify;
+    }
+    .container-education{
+        
+        height: 400px;
+    
+    }
+    .education-item{
+        width: 400px;
+    }
+    .skills{
+   
+        height: 400px;
+        
+    
+    }
+    .skill-item{
+        width:400px;
+    }
+    .awards{
+        
+        height: 500px;
+        
+    
+    }
+    .awards-item{
+        width: 400px;
+        
+        
+    }
+}
+
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
@@ -264,7 +328,7 @@ input[type=submit]:hover {
 .container{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 800px;
     justify-content: center;
     align-items: center;
 }
@@ -275,7 +339,7 @@ input[type=submit]:hover {
     background-color:whitesmoke;
     padding: 20px;
     margin-top: 50px;
-    width: 80%;
+    width: 70%;
    
   }
 
