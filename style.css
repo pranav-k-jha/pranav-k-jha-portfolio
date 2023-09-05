@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     font-family: Montserrat, Sans-Serif;
   }
-  ul {
+  .nav-ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -16,11 +16,11 @@ body, html {
     width: 100%;
   }
   
-  li {
+  .nav-li {
     float: left;
   }
   
-  li a {
+  .nav-li a {
     display: block;
     color: white;
     text-align: center;
@@ -29,14 +29,14 @@ body, html {
   }
   
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
+  .nav-li a:hover {
     background-color: #221;
   }
   .active {
     background-color: #2121;
   }
   @media (max-width: 680px) {
-    ul {
+    .nav-ul {
         flex-direction: column;
   }
 }
@@ -90,19 +90,42 @@ body, html {
 
 
 .container-projects{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     height: 600px;
-    justify-content: space-evenly;
-    align-items: center;
     background-color: beige;
+    padding: 20px;
 }
+.project-item{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
 
 @media (max-width: 680px) {
     .container-projects{
         display: flex;
         flex-direction: column;
+        height: 1500px;
         justify-content: center;
+        align-items: center;
+
+        
+
+    }
+    .project-item{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
     }
 
 }
@@ -110,8 +133,18 @@ h3{
     text-align: center;
 }
 
-.earth-image, .bbc-image{
+.project-image{
     border-radius: 5px;
+    height: 200px;
+    width: 200px;
+}
+@media (max-width: 680px) {
+    .project-image{
+        border-radius: 5px;
+        height: 150px;
+        width: 150px;
+    }
+
 }
 
 .container-aboutme{
@@ -126,6 +159,125 @@ h3{
     padding-right: 50px;
     padding-left: 50px;
 }
+.container-resume{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    margin-top: 40px;
+}
+
+.container-resume > p{
+    text-align:justify;
+    width: 1200px;
+    padding: 10px;
+    margin: 30px;
+}
+.work-exp{
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+
+}
+.work-exp-item{
+    width: 1200px;
+}
+
+.resume-image{
+    border-radius: 50%;
+    max-width: 120px;
+
+    display: block
+}
+
+.container-education{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    background-color:honeydew;
+    justify-content: center;
+    align-items: center;
+
+}
+.education-item{
+    width: 1200px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    background-color:azure;
+    justify-content: center;
+    align-items: center;
+
+}
+.skill-item{
+    width: 1200px;
+}
+.awards{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    background-color:cornsilk;
+    justify-content: center;
+    align-items: center;
+
+}
+.awards-item{
+    width: 1200px;
+    display: flex;
+    justify-content: start;
+    
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #000000;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color:whitesmoke;
+    padding: 20px;
+    margin-top: 50px;
+    width: 80%;
+   
+  }
 
 
 footer {

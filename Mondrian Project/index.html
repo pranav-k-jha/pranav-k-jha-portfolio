@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container{
+      display: grid;
+      grid-template-columns: 320px 9px 198px 9px 153px 9px 50px;
+      grid-template-rows: 414px 9px 130px 10px 155px 9px 20px;
+
+      justify-content: center;
+      gap: 0px;
+
+    }
+    .item-1{
+      background-color: #E72F24;
+  
+    }
+    .item-2{
+      background-color: #000;
+    }
+    .item-3{
+      background-color: #F0F1EC;
+      grid-column-start: 3;
+      grid-column-end: 8;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+    .item-4{
+      background-color: #000;
+      grid-column-start: 1;
+      grid-column-end: 8;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
+    .item-5{
+      background-color: #F0F1EC;
+      grid-column-start:1;
+      grid-column-end: 1;
+      grid-row-start: 3;
+      grid-row-end: 6;
+    }
+    .item-6{
+      background-color: #000;
+      grid-row-start: 3;
+      grid-row-end: 8;
+    }
+    .item-7{
+      background-color: #F0F1EC;
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 3;
+      grid-row-end: 6;
+    }
+    .item-8{
+      background-color: #000;
+      grid-row-start: 3;
+      grid-row-end: 8;
+    }
+    .item-9{
+      background-color: #004592;
+    }
+    .item-10{
+      background-color: #000; 
+    }
+    .item-11{
+      background-color: #F0F1EC;
+      grid-row-start: 5;
+      grid-row-end: 8;
+    }
+    .item-12{
+      background-color: #232629; 
+    }
+    .item-13{
+      background-color: #000;
+    }
+    .item-14{
+      background-color: #000;
+    }
+    .item-15{
+      background-color: #000;
+    }
+    .item-16{
+      background-color: #F0F1EC;
+    }
+    .item-17{
+      background-color: #F9D01E;
+    }
+    .item-18{
+      background-color: #000;
+    }
+    .item-19{
+      background-color: #232629; 
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="item-1"></div>
+    <div class="item-2"></div>
+    <div class="item-3"></div>
+    <div class="item-4"></div>
+    <div class="item-5"></div>
+    <div class="item-6"></div>
+    <div class="item-7"></div>
+    <div class="item-8"></div>
+    <div class="item-9"></div>
+    <div class="item-10"></div>
+    <div class="item-11"></div>
+    <div class="item-12"></div>
+    <div class="item-13"></div>
+    <div class="item-14"></div>
+    <div class="item-15"></div>
+    <div class="item-16"></div>
+    <div class="item-17"></div>
+    <div class="item-18"></div>
+    <div class="item-19"></div>
+  </div>
+  
+</body>
+
+</html>
