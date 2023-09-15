@@ -89,9 +89,9 @@ html {
 
 .container-projects {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 600px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 650px;
   background-color: beige;
   padding: 20px;
 }
@@ -206,6 +206,7 @@ p {
 }
 .work-exp-item {
   width: 1200px;
+  
 }
 
 .resume-image {
@@ -271,6 +272,11 @@ p {
   }
   .work-exp-item > h2{
     font-size: 15px;
+  }
+
+  #work-exp > div > div:nth-child(2) > ul > li:nth-child(5) > ul
+  {
+    width: 380px;
   }
   .resume-image {
     border-radius: 50%;
