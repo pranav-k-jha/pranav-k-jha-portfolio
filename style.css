@@ -7,13 +7,10 @@ html {
 .nav-ul {
   display: flex;
   justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: #000000;
   position: fixed;
   top: 0;
+  margin-top: 0;
   width: 100%;
 }
 
@@ -38,7 +35,10 @@ html {
   .nav-ul {
     flex-direction: row;
     font-size: small;
+
+    
   }
+
 }
 
 .hero-image {
@@ -56,6 +56,7 @@ html {
   justify-content: center;
   align-items: center;
   background-color: wheat;
+  width: 100%;
 }
 @media (max-width: 680px) {
   .container-hero {
@@ -108,7 +109,7 @@ html {
   .container-projects {
     display: flex;
     flex-direction: column;
-    height: 1200px;
+    height: 1600px;
     justify-content: center;
     align-items: center;
   }
@@ -209,6 +210,7 @@ p {
   
 }
 
+
 .resume-image {
   border-radius: 50%;
   max-width: 120px;
@@ -272,6 +274,9 @@ p {
   }
   .work-exp-item > h2{
     font-size: 15px;
+  }
+  .work-exp-item ul li {
+    width:250px;
   }
 
   #work-exp > div > div:nth-child(2) > ul > li:nth-child(5) > ul
