@@ -230,6 +230,8 @@ p {
   align-items: center;
 }
 .education-item {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
 }
 .skills {
@@ -397,10 +399,11 @@ footer .container {
   height: 100%;
 }
 
+
 .social-media {
   font-size: 200%;
   width: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .social-media a i {
@@ -415,4 +418,5 @@ footer .container {
 
 .copyright {
   color: white;
+  margin-top: 10px auto;
 }
