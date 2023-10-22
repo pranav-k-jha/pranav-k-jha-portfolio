@@ -112,7 +112,7 @@ html {
   .container-projects {
     display: flex;
     flex-direction: column;
-    height: 1600px;
+    height: 1800px;
     justify-content: center;
     align-items: center;
   }
